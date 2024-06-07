@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "Chronicdisease",
+    "slug": "Chronicdisease",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/mhealth.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/mhealth.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "notification": {
+      "iosDisplayInForeground": true,
+      "androidMode": "default",
+      "androidCollapsedTitle": "#{unread_notifications} new notifications"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mhealth.app",
+      "buildNumber": "1.1.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to let user put a photo in his profile page."
+      }
+    },
+    "android": {
+      "package": "com.mhealth.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/mhealth.png",
+        "backgroundColor": "#fff"
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "READ_INTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "READ_PHONE_STATE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-document-picker",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/mhealth.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a9cc6792-9698-4159-86d9-b84f9fafe3ec"
+      }
+    }
+  }
+}
